@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <title>
+   Wedding Details · [Bride Name] &amp; [Groom Name]
+  </title>
+  <link href="assets/css/styles.css" rel="stylesheet"/>
+ </head>
+ <body data-page="details">
+  <a class="skip-link" href="#main">
+   Skip to content
+  </a>
+  <header class="site-header">
+   <div class="nav">
+    <a class="brand" href="index.html">
+     <span class="brand-mark">
+      A·K
+     </span>
+     <span>
+      08.26.27
+     </span>
+    </a>
+    <nav class="nav-links">
+     <a data-nav="home" href="index.html">
+      Home
+     </a>
+     <a data-nav="rsvp" href="rsvp.html">
+      RSVP
+     </a>
+     <a data-nav="details" href="details.html">
+      Details
+     </a>
+     <a data-nav="story" href="story.html">
+      Our Story
+     </a>
+    </nav>
+    <button aria-expanded="false" aria-label="Open menu" class="menu-btn">
+     <span>
+     </span>
+    </button>
+   </div>
+  </header>
+  <div class="mobile-drawer">
+   <nav>
+    <a href="index.html">
+     Home
+    </a>
+    <a href="rsvp.html">
+     RSVP
+    </a>
+    <a href="details.html">
+     Wedding Details
+    </a>
+    <a href="story.html">
+     Our Love Story
+    </a>
+   </nav>
+  </div>
+  <button aria-pressed="false" class="sound-toggle" data-on="false" type="button">
+   Ambient sound: Off
+  </button>
+  <main id="main">
+   <section class="page-hero">
+    <div class="container">
+     <div class="eyebrow">
+      The practical things
+     </div>
+     <h1 class="section-title">
+      Wedding
+      <br/>
+      details.
+     </h1>
+     <p class="section-lede">
+      Everything you need to arrive relaxed, dressed beautifully, and ready to celebrate.
+     </p>
+     <div class="quickfacts">
+      <div class="fact">
+       <small>
+        Date
+       </small>
+       <strong data-date-display="">
+       </strong>
+      </div>
+      <div class="fact">
+       <small>
+        Venue
+       </small>
+       <strong data-venue="">
+       </strong>
+      </div>
+      <div class="fact">
+       <small>
+        Ceremony
+       </small>
+       <strong data-ceremony-time="">
+       </strong>
+      </div>
+      <div class="fact">
+       <small>
+        Reception
+       </small>
+       <strong data-reception-time="">
+       </strong>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section class="section" style="background:var(--paper)">
+    <div class="container">
+     <div class="eyebrow reveal">
+      Order of the day
+     </div>
+     <h2 class="section-title reveal">
+      A gentle rhythm.
+     </h2>
+     <div class="timeline" id="schedule">
+     </div>
+    </div>
+   </section>
+   <section class="section">
+    <div class="container">
+     <div class="eyebrow reveal">
+      Dress code
+     </div>
+     <h2 class="section-title reveal">
+      Polished, tropical,
+      <br/>
+      evening-ready.
+     </h2>
+     <p class="section-lede reveal">
+      Think refined resort formal: elegant silhouettes, breathable fabrics, rich color, and no need to match the wedding party exactly.
+     </p>
+     <div class="palette-grid reveal" id="palette">
+     </div>
+     <div class="attire-grid">
+      <article class="info-card reveal">
+       <h3>
+        For the ladies
+       </h3>
+       <p>
+        Long or midi dresses, elegant jumpsuits, or refined Filipiniana-inspired details are welcome. Choose one of the palette families or a complementary neutral. Please avoid bridal white, ivory, and extremely bright neon tones.
+       </p>
+      </article>
+      <article class="info-card reveal">
+       <h3>
+        For the gentlemen
+       </h3>
+       <p>
+        Barong Tagalog, a lightweight suit, or tailored separates work beautifully. Midnight navy, forest, charcoal, and warm neutrals are especially suited to the setting. Formal leather shoes or polished loafers are ideal.
+       </p>
+      </article>
+     </div>
+    </div>
+   </section>
+   <section class="section" style="background:#e9e8df">
+    <div class="container">
+     <div class="eyebrow reveal">
+      Getting there &amp; staying nearby
+     </div>
+     <h2 class="section-title reveal">
+      Arrive with ease.
+     </h2>
+     <div class="info-grid">
+      <article class="info-card reveal">
+       <h3>
+        Ceremony &amp; reception
+       </h3>
+       <p>
+        <strong data-venue="">
+        </strong>
+        <br/>
+        <span data-city="">
+        </span>
+        , Leyte, Philippines
+       </p>
+       <p>
+        Both ceremony and reception details can be updated independently in the configuration file when final arrangements are confirmed.
+       </p>
+       <a class="btn secondary" data-map="ceremony" rel="noopener" target="_blank">
+        Open map
+       </a>
+      </article>
+      <article class="info-card reveal">
+       <h3>
+        Parking
+       </h3>
+       <p>
+        [Parking information placeholder.] Add valet instructions, entrance gate, parking capacity, accessibility drop-off, and any parking pass requirements here.
+       </p>
+      </article>
+      <article class="info-card reveal">
+       <h3>
+        Transportation
+       </h3>
+       <p>
+        [Transportation information placeholder.] Add shuttle pickup points, departure times, tricycle/taxi guidance, or a designated-driver note here.
+       </p>
+      </article>
+      <article class="info-card reveal">
+       <h3>
+        Nearby stays
+       </h3>
+       <p>
+        [Hotel recommendations placeholder.] Add 3–5 selected hotels, distance from the venue, booking codes, and the recommended booking window.
+       </p>
+       <a class="btn secondary" data-hotel-map="" rel="noopener" target="_blank">
+        Explore nearby hotels
+       </a>
+      </article>
+      <article class="info-card reveal">
+       <h3>
+        Weather &amp; rain plan
+       </h3>
+       <p>
+        August in Tacloban is warm and tropical. A final weather note and any rain-contingency instructions should be posted here closer to the wedding date so guests see the current plan before traveling.
+       </p>
+      </article>
+      <article class="info-card reveal">
+       <h3>
+        Gifts
+       </h3>
+       <p>
+        Your presence is already a gift. [Replace with your preferred wording for cash gifts, a registry, honeymoon fund, or “no gifts, please.”]
+       </p>
+      </article>
+     </div>
+    </div>
+   </section>
+   <section class="section">
+    <div class="container">
+     <div class="eyebrow reveal">
+      A few useful answers
+     </div>
+     <h2 class="section-title reveal">
+      Frequently asked.
+     </h2>
+     <div class="faq reveal">
+      <div class="faq-item">
+       <button aria-controls="faq1" aria-expanded="false" class="faq-q">
+        <span>
+         May I bring a guest?
+        </span>
+        <span>
+         +
+        </span>
+       </button>
+       <div class="faq-a" id="faq1">
+        <p>
+         We’re keeping the celebration intimate. Please refer to the names or allotted party size on your invitation and RSVP page; only listed guests can be accommodated.
+        </p>
+       </div>
+      </div>
+      <div class="faq-item">
+       <button aria-controls="faq2" aria-expanded="false" class="faq-q">
+        <span>
+         Are children invited?
+        </span>
+        <span>
+         +
+        </span>
+       </button>
+       <div class="faq-a" id="faq2">
+        <p>
+         [Add your children policy here.] Make the wording match what appears on each family’s invitation.
+        </p>
+       </div>
+      </div>
+      <div class="faq-item">
+       <button aria-controls="faq3" aria-expanded="false" class="faq-q">
+        <span>
+         Will the ceremony be unplugged?
+        </span>
+        <span>
+         +
+        </span>
+       </button>
+       <div class="faq-a" id="faq3">
+        <p>
+         We’d love for everyone to be fully present. [If applicable: Please keep phones and cameras away during the ceremony; our photo and video team will capture it for us.]
+        </p>
+       </div>
+      </div>
+      <div class="faq-item">
+       <button aria-controls="faq4" aria-expanded="false" class="faq-q">
+        <span>
+         Who can I contact on the day?
+        </span>
+        <span>
+         +
+        </span>
+       </button>
+       <div class="faq-a" id="faq4">
+        <p>
+         Please contact
+         <span data-coordinator="">
+         </span>
+         . We kindly ask that day-of logistics go through the coordinator rather than the couple.
+        </p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section class="section" style="background:var(--forest-deep);color:var(--paper);text-align:center">
+    <div class="container">
+     <div class="eyebrow reveal">
+      We’d love to know
+     </div>
+     <h2 class="section-title reveal">
+      Will you be there?
+     </h2>
+     <div class="btn-row reveal" style="justify-content:center">
+      <a class="btn" href="rsvp.html" style="border-color:rgba(255,255,255,.5);color:white">
+       RSVP now
+      </a>
+     </div>
+    </div>
+   </section>
+  </main>
+  <footer class="footer">
+   <div class="container">
+    <div class="footer-mark">
+     <span data-bride="">
+     </span>
+     &amp;
+     <span data-groom="">
+     </span>
+    </div>
+    <p>
+     <span data-date-display="">
+     </span>
+     ·
+     <span data-city="">
+     </span>
+     , Philippines
+    </p>
+   </div>
+  </footer>
+  <script src="assets/js/config.js">
+  </script>
+  <script src="assets/js/main.js">
+  </script>
+ </body>
+</html>

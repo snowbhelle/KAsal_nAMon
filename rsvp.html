@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <title>
+   RSVP · [Bride Name] &amp; [Groom Name]
+  </title>
+  <link href="assets/css/styles.css" rel="stylesheet"/>
+ </head>
+ <body data-page="rsvp">
+  <a class="skip-link" href="#main">
+   Skip to content
+  </a>
+  <header class="site-header">
+   <div class="nav">
+    <a class="brand" href="index.html">
+     <span class="brand-mark">
+      A·K
+     </span>
+     <span>
+      08.26.27
+     </span>
+    </a>
+    <nav class="nav-links">
+     <a data-nav="home" href="index.html">
+      Home
+     </a>
+     <a data-nav="rsvp" href="rsvp.html">
+      RSVP
+     </a>
+     <a data-nav="details" href="details.html">
+      Details
+     </a>
+     <a data-nav="story" href="story.html">
+      Our Story
+     </a>
+    </nav>
+    <button aria-expanded="false" aria-label="Open menu" class="menu-btn">
+     <span>
+     </span>
+    </button>
+   </div>
+  </header>
+  <div class="mobile-drawer">
+   <nav>
+    <a href="index.html">
+     Home
+    </a>
+    <a href="rsvp.html">
+     RSVP
+    </a>
+    <a href="details.html">
+     Wedding Details
+    </a>
+    <a href="story.html">
+     Our Love Story
+    </a>
+   </nav>
+  </div>
+  <button aria-pressed="false" class="sound-toggle" data-on="false" type="button">
+   Ambient sound: Off
+  </button>
+  <main id="main">
+   <section class="page-hero">
+    <div class="container">
+     <div class="eyebrow">
+      We hope you can join us
+     </div>
+     <h1 class="section-title">
+      Kindly
+      <br/>
+      respond.
+     </h1>
+     <p class="section-lede">
+      Please reply by
+      <strong data-rsvp-deadline="">
+      </strong>
+      . Your invitation is reserved for the named guests included in your party.
+     </p>
+    </div>
+   </section>
+   <section class="section" style="padding-top:20px">
+    <div class="container form-shell">
+     <aside class="form-aside reveal">
+      <div class="eyebrow">
+       August 26, 2027
+      </div>
+      <h2 style="font-family:var(--serif);font-size:2.4rem;font-weight:400;line-height:1.05">
+       A seat at the table has been saved for you.
+      </h2>
+      <div class="hairline">
+      </div>
+      <p>
+       We’re planning an intimate celebration of approximately 150 guests. To help us care for everyone well, please only include the guests specifically listed on your invitation.
+      </p>
+      <p style="font-size:.88rem;color:#6d716b">
+       Need help with your invitation? Contact
+       <span data-coordinator="">
+       </span>
+       .
+      </p>
+     </aside>
+     <div class="form-panel reveal">
+      <form id="rsvp-form" novalidate="">
+       <div class="field-grid">
+        <div class="field full">
+         <label for="fullName">
+          Full name
+         </label>
+         <input autocomplete="name" id="fullName" name="fullName" placeholder="As listed on your invitation" required=""/>
+        </div>
+        <div class="field">
+         <label for="email">
+          Email
+         </label>
+         <input autocomplete="email" id="email" name="email" placeholder="you@example.com" required="" type="email"/>
+        </div>
+        <div class="field">
+         <label for="mobile">
+          Mobile number
+         </label>
+         <input autocomplete="tel" id="mobile" name="mobile" placeholder="+63 …" required="" type="tel"/>
+        </div>
+        <div class="field full">
+         <label for="attendance">
+          Will you be attending?
+         </label>
+         <select id="attendance" name="attendance" required="">
+          <option value="">
+           Select a response
+          </option>
+          <option>
+           Joyfully accepts
+          </option>
+          <option>
+           Unable to attend
+          </option>
+         </select>
+        </div>
+        <div class="field">
+         <label for="allotted">
+          Allotted guests
+         </label>
+         <input aria-describedby="guest-validation-note" id="allotted" name="allottedGuests" readonly="" value="1"/>
+        </div>
+        <div class="field">
+         <label for="partySize">
+          Number attending
+         </label>
+         <select id="partySize" name="partySize" required="">
+          <option value="1">
+           1
+          </option>
+          <option value="2">
+           2
+          </option>
+          <option value="3">
+           3
+          </option>
+          <option value="4">
+           4
+          </option>
+         </select>
+        </div>
+        <div class="field full">
+         <label for="guestNames">
+          Names of accompanying guests
+         </label>
+         <textarea id="guestNames" name="guestNames" placeholder="Only include names covered by your invitation."></textarea>
+        </div>
+        <div class="field full">
+         <label for="dietary">
+          Dietary restrictions or allergies
+         </label>
+         <textarea id="dietary" name="dietary" placeholder="Please tell us what the caterer should know."></textarea>
+        </div>
+        <div class="field full">
+         <label for="message">
+          A note for us
+         </label>
+         <textarea id="message" name="message" placeholder="Optional"></textarea>
+        </div>
+       </div>
+       <div class="form-note" id="guest-validation-note">
+        <strong>
+         Guest-list validation ready:
+        </strong>
+        the Google Sheet stores a party ID and validation status placeholder with every RSVP. You can later connect this form to a guest-list lookup without changing the response sheet structure.
+       </div>
+       <button class="btn primary" data-rsvp-submit="" type="submit">
+        Send RSVP
+       </button>
+       <p aria-live="polite" class="form-status" data-rsvp-status="" role="status">
+       </p>
+      </form>
+      <div aria-live="polite" class="success-state">
+       <div class="success-ring">
+        <span>
+         ✓
+        </span>
+       </div>
+       <h2 style="font-family:var(--serif);font-size:3rem;font-weight:400;margin-bottom:8px">
+        Thank you,
+        <span data-confirm-name="">
+        </span>
+        .
+       </h2>
+       <p>
+        Your RSVP has been sent to our guest list. We look forward to celebrating with you.
+       </p>
+       <p class="submission-reference">
+        Reference:
+        <span data-confirm-id="">
+        </span>
+       </p>
+       <a class="btn secondary" href="details.html">
+        View wedding details
+       </a>
+      </div>
+     </div>
+    </div>
+   </section>
+  </main>
+  <footer class="footer">
+   <div class="container">
+    <div class="footer-mark">
+     <span data-bride="">
+     </span>
+     &amp;
+     <span data-groom="">
+     </span>
+    </div>
+    <p>
+     <span data-date-display="">
+     </span>
+     ·
+     <span data-city="">
+     </span>
+     , Philippines
+    </p>
+   </div>
+  </footer>
+  <script src="assets/js/config.js">
+  </script>
+  <script src="assets/js/main.js">
+  </script>
+ </body>
+</html>
