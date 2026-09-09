@@ -49,9 +49,9 @@ window.WEDDING_DATA = {
     { time: "[6:00 PM]", title: "Reception", note: "Dinner, toasts and dancing." }
   ],
   story: [
-    { year: "20XX", label: "First hello", title: "Where it began", text: "Replace this with the small, specific detail you both still remember about meeting for the first time.", image: "assets/images/story-01.svg" },
-    { year: "20XX", label: "First trip", title: "A little farther from home", text: "Add the place, the mishap, the meal, or the moment that made this trip yours.", image: "assets/images/story-02.svg" },
-    { year: "20XX", label: "A favorite chapter", title: "Ordinary days, made special", text: "Use this space for the memory your friends and family would immediately recognize as uniquely you.", image: "assets/images/story-03.svg" },
-    { year: "20XX", label: "The proposal", title: "The easiest yes", text: "Tell this simply: where you were, what surprised you, and what you remember most clearly.", image: "assets/images/story-04.svg" }
+    { year: "2020", label: "First hello", title: "Where it began", text: "Replace this with the small, specific detail you both still remember about meeting for the first time.", image: "assets/images/story-01.jpg" },
+    { year: "2022", label: "First trip", title: "A little farther from home", text: "Add the place, the mishap, the meal, or the moment that made this trip yours.", image: "assets/images/story-02.jpg" },
+    { year: "2023", label: "A favorite chapter", title: "Ordinary days, made special", text: "Use this space for the memory your friends and family would immediately recognize as uniquely you.", image: "assets/images/story-03.jpg" },
+    { year: "2025", label: "The proposal", title: "The easiest yes", text: "Tell this simply: where you were, what surprised you, and what you remember most clearly.", image: "assets/images/story-04.jpg" }
   ]
 };
